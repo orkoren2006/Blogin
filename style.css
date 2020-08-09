@@ -1,0 +1,329 @@
+* {
+    box-sizing: border-box;
+    font-family: Lato;
+    font-size: 1rem;
+}
+
+@font-face {
+    font-family: Eurofurence;
+    src: url(fonts/euro/eurof55.ttf);
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url(fonts/lato/Lato-Bold.ttf)
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(fonts/lato/Lato-Regular.ttf)
+}
+
+html {
+    
+    margin: auto;
+    
+}
+
+body { 
+    margin: 0;
+}
+
+ul {
+    color: #ffffff;
+    font-family: Lato-Bold;
+    font-size: 1rem;
+    
+}
+
+.main-nav li{
+    height: 130px;
+    width: 130px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.top .icon {
+    display: none;
+}
+
+li:hover {
+    color: #58c93a;
+}
+
+img {
+    max-width: 470px;
+    width: 100%;
+}
+
+div.content {
+    display: flex;
+    flex-direction: column;
+    /*align-items: flex-start;*/
+    justify-content: space-between;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    /*margin-bottom: 50px;*/
+    font-family: Lato-Bold;
+    color: #4f4e4e;
+    font-size: 1.75rem;
+    letter-spacing: 0.84px;
+    font-weight: 700;
+    /*line-height: 30px;*/
+}
+
+p {
+
+width: 100%;
+/*height: 114px;*/
+/*margin-bottom: 50px;*/
+/*margin-top: 0;*/
+color: #606060;
+font-weight: 400;
+line-height: 20px;
+/* Text style for "Ut enim ad" */
+letter-spacing: 0.48px;
+}
+
+button {
+    padding: 13px 25px 12px 26px;
+    line-height: 15px;
+    width: 186px;
+    border: 2px solid #c2c2c2;
+    font-family: Lato-Bold;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #c2c1c1;
+    cursor: pointer;
+  
+}
+
+button:hover::after {
+    padding-left: 5px;
+    content: ' \27F6';
+    
+    
+}
+
+button:hover {
+    width: 210px;
+    border: 2px solid #58c93a;
+    color: #58c93a;
+    
+}
+
+.top {
+    background-color: rgb(41, 41, 41);
+    margin: auto;
+    
+}
+
+.container {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1.2rem;
+}
+
+.cards{
+
+    padding-bottom:78px;
+}
+.main.container {
+    flex-direction: column;
+    /*height: 77.5rem;*/
+    border: solid 1px lightgrey;
+}
+
+.card {
+    /*height: 24rem;*/
+    padding-top: 78px;
+}
+
+.content {
+    max-width: 450px;
+}
+
+.pagination {
+    height: 4.7rem;
+    max-width: 980px;
+    padding-left: 19.2px;
+    padding-right: 19.2px;
+    border-left: solid 1px lightgrey;
+    border-right: solid 1px lightgrey;
+}
+
+.footer {
+    height: 19.75rem;
+    background-color: #f8f8f8;
+    border-top: solid 1px lightgrey;
+}
+
+footer {
+    max-width: 980px;
+}
+
+.footer .container{
+    flex-direction: column;
+}
+
+.logo-footer {
+    padding-top: 5rem;
+    font-family: Eurofurence;
+    font-size: 40px;
+    color: #292929
+}
+
+.logo-footer span {
+    color: #58c93a;
+    font-family: Eurofurence;
+    font-size: 40px;
+}
+
+.copy-rights {
+    padding-top: 2rem;
+    height: 2rem;
+    color: #a6a6a6;
+    font-size: 13px;
+}
+
+.social-buttons {
+    padding-top: 2.375rem;
+    width: 230px;
+}
+.social-buttons i{
+    display: inline-flex; /*thanks to it we can align the icon*/
+    justify-content: center; /*thanks to it we can align the icon*/
+    padding: 13px;
+    width:40px;
+    height:40px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #e5e5e5;
+    text-align: center;
+    /*font-size: 30px;*/
+}
+
+.social-buttons i:hover {
+    background-color: #516fad;
+}
+
+/* flex helpers */
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* list-helpers */
+
+.clean-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    height: 130px;
+    font-family: Eurofurence;
+    color: #ffffff;
+    font-size: 40px;
+    padding: 0;
+    
+}
+
+.logo.span {
+    color: #58c93a;
+}
+
+@media(max-width: 970px) {
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        max-width: 600px;
+    }
+    .cards{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .main.container {
+        height: auto;
+
+    }
+    img{
+        margin-bottom: 1rem;
+    }
+    .main .card {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+
+    .top .icon {
+        display: block;
+    }
+
+    .top .icon i{ 
+        color: #ffffff;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .top .icon i:hover {
+        color: #58c93a;
+    }
+
+    .main-nav li:not(:first-child) {
+        margin-inline-start: 0;
+    }
+    h2 {
+    font-size: 1.5rem;
+    }
+    p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -180px;
+        height: 100vh;
+        width: 180px;
+        background-color: #292929;
+        opacity: 0.9;
+        z-index: 2;
+        /*transform: translateX(0%);*/
+        transition: transform .8s;
+       
+    }
+
+    body.menu-open .main-nav {
+        transform: translateX(-180px);
+    }
+
+}   
