@@ -14,7 +14,14 @@
         <header class="flex align-center space-between container">
             <div class="logo">Blogin<span class="logo span">.</span></div>
             <ul class="flex clean-list main-nav">
-                <li onclick="toggleMenu()">Jouranl</li>
+                <li class="journal" onclick="toggleMenu()">Jouranl
+                <div class="drop-down">
+                    <a href="#">January 2020</a>
+                    <a href="#">February 2020</a>
+                    <a href="#">March 2020</a>
+                    <a href="#">April 2020</a>
+                </div>
+                </li>
                 <li onclick="toggleMenu()">About</li>
                 <li onclick="toggleMenu()">Work</li>
                 <li onclick="toggleMenu()">Contact</li>
@@ -33,7 +40,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugit rerum soluta molestias
                         repudiandae voluptas iure aliquid, dolorem corrupti quibusdam eaque dignissimos sit deleniti
                         reprehenderit quo officia nulla aspernatur sed?</p>
-                    <button>Continue Reading</button>
+                    <button onclick="openModal()">Continue Reading</button>
                 </div>
             </div>
             <div class="second-card card flex space-between">
@@ -43,7 +50,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsum qui? Soluta expedita
                         error illo dolorem sit dignissimos nemo laboriosam, excepturi aliquid adipisci nihil qui
                         recusandae accusantium esse voluptatem assumenda!</p>
-                    <button>Continue Reading</button>
+                    <button onclick="openModal()">Continue Reading</button>
                 </div>
             </div>
             <div class="third-card card flex space-between">
@@ -53,7 +60,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex eos nam, odio vitae officia, et
                         consectetur fugiat quibusdam quisquam ea eaque eligendi rerum autem dolorem laboriosam rem sit
                         hic dolor!</p>
-                    <button>Continue Reading</button>
+                    <button onclick="openModal()">Continue Reading</button>
                 </div>
             </div>
 
@@ -62,8 +69,8 @@
 
     <section>
         <div class="pagination container flex space-between align-center">
-            <div class="previous align-center">Previous</div>
-            <div class="next align-center">Next</div>
+            <div class="arrow previous align-center"><span>&#x2190</span>Previous</div>
+            <div class="arrow next align-center">Next<span>&#x2192</span></div>
         </div>
     </section>
 
